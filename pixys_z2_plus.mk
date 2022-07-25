@@ -24,11 +24,10 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 $(call inherit-product, vendor/pixys/config/telephony.mk)
 
-# GApps
+# PixysOS properties
 TARGET_GAPPS_ARCH := arm64
-
-# Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := pixys_z2_plus
